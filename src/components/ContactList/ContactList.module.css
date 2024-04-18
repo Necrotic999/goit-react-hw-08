@@ -1,0 +1,10 @@
+.contacts_list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: bold;
+}
