@@ -2,12 +2,15 @@ import css from "./Contact.module.css";
 import { BiSolidUser } from "react-icons/bi";
 import { FaPhone } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
+import { deleteContact } from "../../redux/contacts/contactsOps";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();
   function handleDeleteContact(id) {
     dispatch(deleteContact(id));
+    toast.success("Contact was deleted");
   }
   return (
     <li className={css.user}>

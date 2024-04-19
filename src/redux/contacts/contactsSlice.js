@@ -42,7 +42,7 @@ const slice = createSlice({
           addContact.pending,
           deleteContact.pending
         ),
-        (state, { payload }) => {
+        (state) => {
           state.contacts.loading = true;
           state.contacts.error = null;
         }

@@ -1,0 +1,15 @@
+.link_wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.nav_link {
+  color: #eeff00;
+  font-size: 20px;
+  text-decoration: none;
+  transition-duration: 200ms;
+  font-weight: bold;
+  &:hover {
+    color: #f79800;
+  }
+}
